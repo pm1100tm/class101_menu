@@ -43,7 +43,7 @@ class SecondCategory(models.Model):
 
 class ThirdCategory(models.Model):
     id              = models.PositiveSmallIntegerField(primary_key=True)
-    name            = models.CharField(max_length=20, unique=True)
+    name            = models.CharField(max_length=20)
     index_number    = models.PositiveSmallIntegerField()
     is_deleted      = models.BooleanField(default=False)
     created_at      = models.DateTimeField(auto_now_add=True)
